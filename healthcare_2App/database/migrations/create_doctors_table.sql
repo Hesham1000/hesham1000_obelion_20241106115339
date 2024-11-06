@@ -1,0 +1,10 @@
+CREATE TABLE `doctors` (
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `firstName` VARCHAR(255) NOT NULL,
+  `lastName` VARCHAR(255) NOT NULL,
+  `email` VARCHAR(255) NOT NULL UNIQUE,
+  `phone` VARCHAR(15) NOT NULL,
+  `password` VARCHAR(255) NOT NULL,
+  `specialty` VARCHAR(255) NOT NULL,
+  `licenseNumber` VARCHAR(255) NOT NULL
+);
